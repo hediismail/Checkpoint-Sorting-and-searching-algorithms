@@ -1,7 +1,7 @@
 ALGORITHM algorithm_name
 VAR
     T : ARRAY_OF INTEGER;
-    a,i,j:INTEGER;
+    n,a,i,j:INTEGER;
 BEGIN
     //read longueur de T
     read(n);
@@ -9,6 +9,7 @@ BEGIN
     FOR i FROM 0 TO n-1 DO
         read(T[i]);
     END_FOR
+    /////////
     FOR i FROM 1 TO n-1 DO
         a:=T[i];
         j:=i;
