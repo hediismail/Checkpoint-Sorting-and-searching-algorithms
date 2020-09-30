@@ -1,0 +1,22 @@
+ALGORITHM algorithm_name
+VAR
+    T : ARRAY_OF INTEGER;
+    a,i,j:INTEGER;
+BEGIN
+    //read longueur de T
+    read(n);
+    //read element of T
+    FOR i FROM 0 TO n-1 DO
+        read(T[i]);
+    END_FOR
+    FOR i FROM 1 TO n-1 DO
+        a:=T[i];
+        j:=i;
+        WHILE (j>=0 AND T[j-1]>a) DO
+            T[j]:=T[j-1];
+            j:=j-1;
+        END_WHILE
+        T[j]:=a;
+    END_FOR
+
+END
